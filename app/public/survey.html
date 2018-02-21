@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 </head>
 <body id="surveybody">
@@ -37,7 +37,7 @@
     <hr>
 
     <h3><strong>Question 1</strong></h3>
-    <h4>I consider empirical evidence as important in finding the truth.</h4>
+    <h4>You enjoy being outside more than being inside.</h4>
     <select class="chosen-select" id="a1">
       <option value="" disabled selected></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -48,7 +48,7 @@
     </select>
 
     <h3><strong>Question 2</strong></h3>
-    <h4>I find it difficult to understand people's emotions.</h4>
+    <h4>You find it difficult to understand people's emotions.</h4>
     <select class="chosen-select" id="a2">
       <option value="" disabled selected></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -60,7 +60,7 @@
 
 
     <h3><strong>Question 3</strong></h3>
-    <h4>I tend to get things done ahead of time.</h4>
+    <h4>You tend to get things done ahead of time.</h4>
     <select class="chosen-select" id="a3">
       <option value="" disabled selected></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -72,7 +72,7 @@
 
 
     <h3><strong>Question 4</strong></h3>
-    <h4>I am a creative person</h4>
+    <h4>You are a creative person.</h4>
     <select class="chosen-select" id="a4">
       <option value="" disabled selected></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -84,7 +84,7 @@
 
 
     <h3><strong>Question 5</strong></h3>
-    <h4>People can rarely upset you.</h4>
+    <h4>People upset you quite easily.</h4>
     <select class="chosen-select" id="a5">
       <option value="" disabled selected></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -96,7 +96,7 @@
 
 
     <h3><strong>Question 6</strong></h3>
-    <h4>It is often difficult for you to relate to other people’s feelings.</h4>
+    <h4>You enjoy trying new things.</h4>
     <select class="chosen-select" id="a6">
       <option value="" disabled selected></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -108,7 +108,7 @@
 
 
     <h3><strong>Question 7</strong></h3>
-    <h4>In a discussion, truth should be more important than people’s sensitivities.</h4>
+    <h4>Facts are more important to you than emotion.</h4>
     <select class="chosen-select" id="a7">
       <option value="" disabled selected></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -119,7 +119,7 @@
     </select>
 
     <h3><strong>Question 8</strong></h3>
-    <h4>You rarely get carried away by fantasies and ideas.</h4>
+    <h4>You are a problem solver.</h4>
     <select class="chosen-select" id="a8">
       <option value="" disabled selected></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -130,7 +130,7 @@
     </select>
 
     <h3><strong>Question 9</strong></h3>
-    <h4>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h4>
+    <h4>You are a very agreeable person.</h4>
     <select class="chosen-select" id="a9">
       <option value="" disabled selected></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -141,7 +141,7 @@
     </select>
 
     <h3><strong>Question 10</strong></h3>
-    <h4>You feel more energetic after spending time with a group of people.</h4>
+    <h4>You are a generous person.</h4>
     <select class="chosen-select" id="a10">
       <option value="" disabled selected></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -154,32 +154,31 @@
     <br>
     <br>
 
-    <!-- Submit Button -->
     <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i> Submit</button> <br><br>
 
-    <!-- Modal -->
-    <div id="myModal" class="modal fade" role="dialog">
-      <div class="modal-dialog modal-lg">
-
-        
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" id="closex">&times;</button>
-            <h3 class="modal-title text-center">Here's your match!</h3>
-          </div>
-          <div class="modal-body">
-            <h4 class="text-center">Name: <span id="modalName"></span></h4>
-            <p id="modalPhoto" class="text-center"></p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal" id="modalClose">Close</button>
-          </div>
-        </div> 
-      </div> 
-    </div> 
-
   </div>
-
-<script src="jslogic.js"></script>
+  <script type ="text/javascript" src="assets/script.js"></script>
 </body>
 </html>
+
+
+
+<!-- <div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" id="closex">&times;</button>
+        <h3 class="modal-title text-center">Here's your match!</h3>
+      </div>
+      <div class="modal-body">
+        <h4 class="text-center">Name: <span id="modalName"></span></h4>
+        <p id="modalPhoto" class="text-center"></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" id="modalClose">Close</button>
+      </div>
+    </div> 
+  </div> 
+</div>  -->
