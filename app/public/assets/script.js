@@ -1,3 +1,8 @@
+var friends = require('../data/friends.js');
+
+var friendArray = [];
+
+
 $("#submit").on('click', function(){
   event.preventDefault();
 
@@ -29,6 +34,7 @@ $("#submit").on('click', function(){
     ]
   }
   console.log(friendAdded)
+ 
 
   var check = function(data){
     if(data == true){
@@ -48,3 +54,36 @@ $("#submit").on('click', function(){
       $('#')
   })
 });
+
+var friendArray = [];
+var scoreArray = [];
+
+
+//Takes friends from previous file and makes into useable array for page logic
+function listfriends(){
+      for(i = 0; i < friends.length; i++){
+        friendArray.push(friends[i]);
+      }
+}
+
+
+//Takes each friend's score and compares to user's scores
+function compare() {
+  for(i=0; i < friendArray.length; i++){
+    var currentfriend = friendArray[i];
+      for(i = 0; i < currentfriend.scores.length; i++){
+        var totalDifference = [];
+        totalDifference[i] = currentfriend.scores[i] - user.scores[i];
+        function getSum(total,num){
+          return total + num
+        }
+        function addScores (){
+          var sum = totalDifference.reduce(getSum);
+          return sum;
+        }
+        friendArray.push(sum);
+      }
+  }
+}
+
+  
