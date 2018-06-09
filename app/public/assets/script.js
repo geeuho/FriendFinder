@@ -3,8 +3,16 @@ var friends = require('../data/friends.js');
 var friendArray = [];
 
 
+
+$.get("http://localhost:8080/api/friends", function(data){
+  console.log(data);
+    $("#result").show();
+    $("#data").text(data);
+});
+
 $("#submit").on('click', function(){
   event.preventDefault();
+
 
   var a1 = $('a1').val().trim();
   var a2 = $('a2').val().trim();
